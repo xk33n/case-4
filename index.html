@@ -51,7 +51,15 @@
             <button type="submit">Отправить</button>
         </form>
     </div>
-    
+
+    <div class="container">
+    <?php if (isset($_GET['status']) && $_GET['status'] == 'success') { ?>
+        <div class="alert-success">Спасибо за участие! Ваши ответы успешно сохранены.</div>
+    <?php } ?>
+
+    <h1>Пожалуйста, заполните анкету</h1>
+    ...
+</div>
     <!-- Опциональный скрипт для проверки данных -->
     <script src="app.js"></script>
 </body>
