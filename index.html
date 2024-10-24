@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Пожалуйста, заполните анкету</h1>
+        
+        <!-- Форма -->
+        <form id="surveyForm" action="#" method="post">
+            <!-- Текстовое поле -->
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+            
+            <!-- Поле для email -->
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+
+            <!-- Выбор пола -->
+            <p>Укажите ваш пол:</p>
+            <label><input type="radio" name="gender" value="male" checked>Мужской</label>
+            <label><input type="radio" name="gender" value="female">Женский</label>
+            <label><input type="radio" name="gender" value="other">Другой</label>
+
+            <!-- Множественный выбор -->
+            <p>Какие языки программирования вы знаете?</p>
+            <label><input type="checkbox" name="languages[]" value="python">Python</label>
+            <label><input type="checkbox" name="languages[]" value="javascript">JavaScript</label>
+            <label><input type="checkbox" name="languages[]" value="java">Java</label>
+            <label><input type="checkbox" name="languages[]" value="csharp">C#</label>
+
+            <!-- Выпадающий список -->
+            <label for="country">Страна проживания:</label>
+            <select id="country" name="country">
+                <option value="">Выберите страну</option>
+                <option value="russia">Россия</option>
+                <option value="usa">США</option>
+                <option value="uk">Великобритания</option>
+                <option value="germany">Германия</option>
+            </select>
+
+            <!-- Текстовая область -->
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+            <!-- Кнопка отправки -->
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    
+    <!-- Опциональный скрипт для проверки данных -->
+    <script src="app.js"></script>
+</body>
+</html>
