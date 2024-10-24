@@ -53,6 +53,24 @@
     </div>
 
     <div class="container">
+        <h1>Анализ результатов анкетирования</h1>
+
+        <!-- График распределения полов -->
+        <canvas id="genderChart" style="width:100%;max-width:700px"></canvas>
+
+        <!-- График популярности языков программирования -->
+        <canvas id="languageChart" style="width:100%;max-width:700px"></canvas>
+
+        <!-- График стран проживания -->
+        <canvas id="countryChart" style="width:100%;max-width:700px"></canvas>
+    </div>
+
+    <!-- Подключение библиотек -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <div class="container">
     <?php if (isset($_GET['status']) && $_GET['status'] == 'success') { ?>
         <div class="alert-success">Спасибо за участие! Ваши ответы успешно сохранены.</div>
     <?php } ?>
