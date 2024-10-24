@@ -66,3 +66,9 @@ button {
 button:hover {
     opacity: 0.85;
 }
+
+.alert-success {
+    background-color: lightgreen;
+    padding: 15px;
+    margin-bottom: 20px;
+}
